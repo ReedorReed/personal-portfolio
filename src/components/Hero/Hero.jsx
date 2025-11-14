@@ -8,6 +8,15 @@ import githubIconLight from '../../assets/github-light.svg';
 import githubIconDark from '../../assets/github-dark.svg';
 import CV from '../../assets/cv.pdf';
 import { useTheme } from '../../common/ThemeContext';
+import { FaHtml5 } from 'react-icons/fa';
+import { FaCss3Alt } from 'react-icons/fa';
+import { IoLogoJavascript } from 'react-icons/io5';
+import { FaSass } from 'react-icons/fa';
+import { FaReact } from 'react-icons/fa';
+import { FaGitAlt } from 'react-icons/fa';
+import { FaFigma } from 'react-icons/fa';
+import { FaGithub } from 'react-icons/fa';
+import { SiVite } from 'react-icons/si';
 
 export default function Hero() {
 	const { theme, toggleTheme } = useTheme();
@@ -38,13 +47,31 @@ export default function Hero() {
 					Reed
 				</h1>
 				<h2>Frontend Developer</h2>
+				<div className="info__skills">
+					<FaHtml5 style={{ color: theme === 'light' ? '#222' : '#fff' }} />
+					<FaCss3Alt style={{ color: theme === 'light' ? '#222' : '#fff' }} />
+					<IoLogoJavascript
+						style={{ color: theme === 'light' ? '#222' : '#fff' }}
+					/>
+					<FaSass style={{ color: theme === 'light' ? '#222' : '#fff' }} />
+					<FaReact style={{ color: theme === 'light' ? '#222' : '#fff' }} />
+					<SiVite style={{ color: theme === 'light' ? '#222' : '#fff' }} />
+					<FaGitAlt style={{ color: theme === 'light' ? '#222' : '#fff' }} />
+					<FaGithub style={{ color: theme === 'light' ? '#222' : '#fff' }} />
+					<FaFigma style={{ color: theme === 'light' ? '#222' : '#fff' }} />
+				</div>
 				<span>
-					<a href="https://www.linkedin.com/in/christiansreed/" target="_blank">
-						<img src={linkedinIcon} alt="Linkedin icon" />
-					</a>
-					<a href="https://github.com/ReedorReed/" target="_blank">
-						<img src={githubIcon} alt="Github icon" />
-					</a>
+					<h2>Social & GitHub</h2>
+					<div>
+						<a
+							href="https://www.linkedin.com/in/christiansreed/"
+							target="_blank">
+							<img src={linkedinIcon} alt="Linkedin icon" />
+						</a>
+						<a href="https://github.com/ReedorReed/" target="_blank">
+							<img src={githubIcon} alt="Github icon" />
+						</a>
+					</div>
 				</span>
 				<p className="info__description">
 					Passion for developing websites, coffee and climbing.
