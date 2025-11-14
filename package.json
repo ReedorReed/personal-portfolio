@@ -1,6 +1,6 @@
 {
 	"name": "personal-portfolio",
-	"homepage": "https://ReedorReed.github.io/personal-portfolio",
+	"homepage": "https://reedorreed.github.io/personal-portfolio",
 	"private": true,
 	"version": "0.0.0",
 	"type": "module",
@@ -9,8 +9,8 @@
 		"build": "vite build",
 		"lint": "eslint .",
 		"preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+		"predeploy": "npm run build",
+		"deploy": "gh-pages -d dist"
 	},
 	"dependencies": {
 		"gh-pages": "^6.3.0",
