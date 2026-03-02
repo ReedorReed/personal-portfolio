@@ -2,6 +2,7 @@ import './Hero.sass';
 import heroImg from '../../assets/hero-img.png';
 import sunIcon from '../../assets/sun.svg';
 import moonIcon from '../../assets/moon.svg';
+import reedLogo from '../../assets/reed-logo.svg';
 import linkedinIconLight from '../../assets/linkedin-light.svg';
 import linkedinIconDark from '../../assets/linkedin-dark.svg';
 import githubIconLight from '../../assets/github-light.svg';
@@ -41,11 +42,10 @@ export default function Hero() {
 				/>
 			</div>
 			<div className="info">
-				<h1>
-					Christian
-					<br />
-					Reed
-				</h1>
+				<div>
+					<h1>Christian</h1>
+					<img src={reedLogo} alt="Reed logo" className="info__logo" />
+				</div>
 				<h2>Frontend Developer</h2>
 				<div className="info__skills">
 					<FaHtml5 style={{ color: theme === 'light' ? '#222' : '#fff' }} />
