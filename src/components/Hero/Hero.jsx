@@ -18,6 +18,9 @@ import { FaGitAlt } from 'react-icons/fa';
 import { FaFigma } from 'react-icons/fa';
 import { FaGithub } from 'react-icons/fa';
 import { SiVite } from 'react-icons/si';
+import { FaPhp } from 'react-icons/fa';
+import { RiTailwindCssFill } from 'react-icons/ri';
+import { SiTypescript } from 'react-icons/si';
 
 export default function Hero() {
 	const { theme, toggleTheme } = useTheme();
@@ -53,12 +56,19 @@ export default function Hero() {
 					<IoLogoJavascript
 						style={{ color: theme === 'light' ? '#222' : '#fff' }}
 					/>
+					<SiTypescript
+						style={{ color: theme === 'light' ? '#222' : '#fff' }}
+					/>
 					<FaSass style={{ color: theme === 'light' ? '#222' : '#fff' }} />
+					<RiTailwindCssFill
+						style={{ color: theme === 'light' ? '#222' : '#fff' }}
+					/>
 					<FaReact style={{ color: theme === 'light' ? '#222' : '#fff' }} />
 					<SiVite style={{ color: theme === 'light' ? '#222' : '#fff' }} />
 					<FaGitAlt style={{ color: theme === 'light' ? '#222' : '#fff' }} />
 					<FaGithub style={{ color: theme === 'light' ? '#222' : '#fff' }} />
 					<FaFigma style={{ color: theme === 'light' ? '#222' : '#fff' }} />
+					<FaPhp style={{ color: theme === 'light' ? '#222' : '#fff' }} />
 				</div>
 				<span>
 					<h2>Social & GitHub</h2>
