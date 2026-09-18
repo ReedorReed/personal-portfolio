@@ -86,9 +86,6 @@ export default function Hero() {
 				<p className="info__description">
 					Passion for developing websites, coffee and climbing.
 				</p>
-				<a href={CV} download>
-					<button className="info__cv-button">Resumé</button>
-				</a>
 			</div>
 		</section>
 	);
